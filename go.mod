@@ -1,4 +1,4 @@
-module kit
+module github.com/losemy/kit
 
 go 1.19
 
