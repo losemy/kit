@@ -1,10 +1,9 @@
 package ktime
 
 import (
-	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/frame/g"
+	"kit/log"
 )
 
 // TimeCost 计算时间消耗
@@ -15,6 +14,6 @@ func TimeCost(methodName string) func() {
 	return func() {
 		tc := time.Since(start)
 		timeCost := tc.Milliseconds()
-		g.Log().Infof(context.Background(), "%v cost: %vms", methodName, timeCost)
+		log.Infof("%v cost: %vms", methodName, timeCost)
 	}
 }

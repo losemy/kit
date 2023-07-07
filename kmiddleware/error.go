@@ -2,6 +2,7 @@ package kmiddleware
 
 import (
 	xerrors "kit/errors"
+	"kit/kconstant"
 	"kit/model"
 
 	"github.com/gogf/gf/v2/net/ghttp"
