@@ -1,11 +1,10 @@
 package kmiddleware
 
 import (
+	"github.com/gogf/gf/v2/net/ghttp"
 	xerrors "github.com/losemy/kit/errors"
 	"github.com/losemy/kit/kconstant"
-	"github.com/losemy/kit/model"
-
-	"github.com/gogf/gf/v2/net/ghttp"
+	"github.com/losemy/kit/kmodel"
 )
 
 func ErrorHandler(r *ghttp.Request) {
@@ -13,15 +12,9 @@ func ErrorHandler(r *ghttp.Request) {
 	if err := r.GetError(); err != nil {
 		r.Response.ClearBuffer()
 		if data, ok := err.(*xerrors.Error); ok {
-			r.Response.WriteJson(&model.Response{
-				Code: data.Code,
-				Msg:  data.Msg,
-			})
+			r.Response.WriteJson(kmodel.Error(data))
 		} else {
-			r.Response.WriteJson(&model.Response{
-				Code: kconstant.ErrSystem.Code,
-				Msg:  kconstant.ErrSystem.Msg,
-			})
+			r.Response.WriteJson(kmodel.Error(kconstant.ErrSystem))
 		}
 	}
 	r.SetError(nil)
