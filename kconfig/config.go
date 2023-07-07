@@ -3,7 +3,7 @@ package kconfig
 import (
 	"context"
 
-	"kit/log"
+	"github.com/losemy/kit/log"
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/util/gconv"

@@ -1,9 +1,9 @@
 package kmiddleware
 
 import (
-	xerrors "kit/errors"
-	"kit/kconstant"
-	"kit/model"
+	xerrors "github.com/losemy/kit/errors"
+	"github.com/losemy/kit/kconstant"
+	"github.com/losemy/kit/model"
 
 	"github.com/gogf/gf/v2/net/ghttp"
 )

@@ -3,7 +3,7 @@ package ktime
 import (
 	"time"
 
-	"kit/log"
+	"github.com/losemy/kit/log"
 )
 
 // TimeCost 计算时间消耗

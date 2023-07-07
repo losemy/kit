@@ -5,8 +5,8 @@ import (
 	"io"
 	"time"
 
-	"kit/kconstant"
-	"kit/log"
+	"github.com/losemy/kit/kconstant"
+	"github.com/losemy/kit/log"
 
 	"github.com/gogf/gf/v2/crypto/gmd5"
 	"github.com/gogf/gf/v2/frame/g"

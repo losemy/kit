@@ -1,7 +1,7 @@
 package kmiddleware
 
 import (
-	"kit/ktime"
+	"github.com/losemy/kit/ktime"
 
 	"github.com/gogf/gf/v2/net/ghttp"
 )

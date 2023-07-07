@@ -1,7 +1,7 @@
 package kconstant
 
 import (
-	"kit/errors"
+	"github.com/losemy/kit/errors"
 )
 
 // 使用负数定义非业务异常
